@@ -12,7 +12,7 @@ from telegram import Update, ReplyKeyboardMarkup, KeyboardButton, ReplyKeyboardR
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
 # ------------------ الإعدادات والملفات ------------------
-TOKEN = "7655758995:AAHLbGnwbnyeBz5lvgBrDwCfydqoBlGEDXs"  # ضع التوكن هنا أو استخدم متغير بيئة BOT_TOKEN
+TOKEN = os.getenv("BOT_TOKEN")
 OWNER_ID = 5524792549  # المالك الوحيد الذي لا يُحذف ولا تُقيّد صلاحياته
 
 CODES_FILE = "codes.json"
@@ -2462,4 +2462,5 @@ if __name__ == "__main__":
     app.add_error_handler(error_handler)
 
     print("🤖 البوت يعمل الآن …")
+
     app.run_polling()
