@@ -1,0 +1,11 @@
+{
+    "8401962300": {
+        "content": true,
+        "student_add_delete": false,
+        "student_edit": false,
+        "suspend": false,
+        "complaints": false,
+        "stats": false,
+        "broadcast": false
+    }
+}
